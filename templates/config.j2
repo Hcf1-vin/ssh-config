@@ -1,0 +1,6 @@
+{% for item in instances %}
+Host {{ item.name }}
+    HostName {{ item.ip }}
+    IdentityFile "{{ item.key }}"
+    User {{ item.user }}
+{% endfor %}
